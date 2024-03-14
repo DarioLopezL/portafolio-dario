@@ -1,47 +1,322 @@
 body {
-    font-family: 'Helvetica', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    text-align: center;
-    margin: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+margin-top: 170px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 2em; 
+  font-weight: bold; 
+  color: #070707; 
+  text-transform: uppercase; 
+  letter-spacing: 4px;
+}
+
+.logo a {
+  text-decoration: none; /* Elimina el subrayado del enlace si es necesario */
+  color: inherit; /* Hereda el color del texto de la clase .logo */
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #070707;
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+   
+  }
+
+  nav.show {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
   }
-  
-  .card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 30px;
-    max-width: 400px;
-    width: 100%;
+
+  nav ul {
+    flex-direction: column;
   }
-  
-  h1 {
-    color: #008080; /* Color verde azulado oscuro */
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
   }
+}
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+
+#sobre-mi {
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 120px;
+  text-align: center;
+  background: linear-gradient(45deg, #3f1fe2, #32b4db);
+  color: #fff;
+  border-radius: 10px;
+}
+
+#sobre-mi h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#sobre-mi p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Agregado margen superior al contenido debajo del menú */
+section:not(#sobre-mi) {
+  margin-top: 60px;
+}
   
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
+#contacto {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: left;
+  background: linear-gradient(45deg, #574f7c, #67a1b3);
+  color: #fff;
+  border-radius: 15px;
+}
+
+#contacto h2 {
+  font-size:3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
   
-  .close-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #008080;
+}
+
+button {
+  background-color: #fff;
+  color: #3f1fe2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #32b4db;
+  color: #fff;
+}
+footer {
+    background-color: #333; /* Color oscuro para el fondo del footer */
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 70px;
+    margin-top: 20px; 
+    width: 100%;
+}
+/* style the my project image and description */
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 75px auto;
+  height: 400px; 
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: 60%; 
+  border-radius: 0px 0px 0 0;
+  overflow: hidden;
+}
+
+.card .card_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 0 0;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: -50px; 
+  height: 40px;
+}
+
+.card .card_description {
+  padding: 15px;
+  text-align: center;
+   flex-grow: 1;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    
+    flex-direction: column;
   }
-  
-  .close-btn:hover {
-    background-color: #006666; /* Color más oscuro al pasar el ratón */
-  }
-  
+}
+#habilidades {
+  background-color: #fafafa61; 
+  padding: 20px; 
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.features section {
+  width: 30%; 
+
+  margin-bottom: 20px; 
+    background-color: #68ae80; 
+    padding: 15px; 
+    border-radius: 8px;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
+.github-btn {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.github-btn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.github-btn button:hover {
+  background-color: #218838;
+}

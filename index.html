@@ -1,313 +1,306 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portafolio Darío López</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Enlace a Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title >Portafolio Darío López</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><|></a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#mis-proyectos">Mis Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Sobre Mí</a></li>
-							<li><a href="#one">Mis proyectos</a></li>
-							<li><a href="#two">Habilidades</a></li>
-							<li><a href="#three">Contactos</a></li>
+    <section id="sobre-mi">
+      <h1>
+        ¡Hola! Soy Darío López, 
+        <span style="color: #000000">Desarrollador Web y Apasionado por la Tecnología.</span>
+      </h1>
+      <p>
+        Me considero una persona autodidacta con un fuerte interés en aprender nuevas tecnologías y mantenerme actualizado en las últimas tendencias del mundo del desarrollo web. Mi enfoque principal se centra en el desarrollo de aplicaciones web utilizando Laravel y PHP. Además, poseo conocimientos en soporte técnico, lo que me permite abordar de manera integral los diferentes aspectos de los proyectos en los que participo.
+        <br />
+        Disfruto enfrentando nuevos desafíos y llevando a cabo proyectos personales que no solo expanden mis habilidades técnicas, sino que también reflejan mi dedicación para crear soluciones innovadoras y eficientes.
+        <br />
+        Si deseas conocer más sobre mis proyectos y contribuciones, te invito a explorar mi perfil en GitHub:
+        <a href="https://github.com/DarioLopezL" target="_blank">
+          <span style="color: #000000">GitHub</span>
+        </a>
+      </p>
+    </section>
+    <section id="mis-proyectos">
+      <h1>Mis Proyectos</h1>
+      <div class="cards-list">
+        <div class="card 1">
+          <div class="card_title title-black">
+            <p>Clon de Instagram</p>
+          </div>
+          <div class="card_image">
+              <img src="images/instagramers.png" />
+          </div>
+              <div class="card_description">
+                <p>Es un proyecto hecho con el framework de laravel,<br>
+                  Practicamente es un clon de Instagram, Tiene la misma<br>
+                funcionalidad, Registrarse, y crear un perfil, subir Imagenes, darle me gusta,<br>
+                 y darle un follow.
+                </p>
+              </div>
+          
+        </div>
+        
+        <div class="card 2">
+          <div class="card_title title-black">
+            <p>JobsPty</p>
+          </div>
+          <div class="card_image">
+            <img src="images/JobsPty.png" />
+          </div>
+          
+          <div class="card_description">
+            <p>JobsPty es un proyecto diseñado como un sitio web<br>
+              para encontrar o subir vacantes tiene la opción de elegir <br>
+              si desea inicar como reclutador o empleador en busca de su primera chamba<br>
+                Realizado con Laravel,MYsql y talwind CSS
+            </p>
+          </div>
+        
+        </div>
 
-							
-						</ul>
-					</nav>
-				</div>
-			</section>
+        <div class="card 3">
+          <div class="card_title title-black">
+            <p>Formulario de Datos con Java</p>
+          </div>
+          <div class="card_image">
+            <img src="images/pic02.jpg" />
+          </div>
+          <div class="card_description">
+            <p>Este es un formulario de datos,
+              donde el usuario tiene<br>
+              que llenar cada requisitos,
+              fue hecho con Servlets de java con HTML.<br>
+            </p>
+          </div>
+        </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <div class="card 4">
+          <div class="card_title title-black">
+            <p>Registro de Tareas</p>
+          </div>
+          <div class="card_image">
+            <img src="images/pic03.jpeg" />
+          </div>
+          <div class="card_description">
+            <p>Proyecto Realizado con Php y mysql<br>
+              CRUD, se puede crear una tarea, actualizar y eliminar<br>
+             <br>
+            
+            </p>
+          </div>
+        </div>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hola, Soy Darío López, <span style="color: #ffa4de">Desarrollador Web.</span> </h1>
-							<p>Tengo 26 años, soy Licenciado en informática, egresado en el año 2021 en la universidad de Panamá. Me dedico a desarrollar en tecnologías web. <a href="" > </a><br /> Te invito a que pases por mi GitHub <a href="https://github.com/DarioLopezL"target="_blank"> <span style="color: #ffa4de"> Click </span> </a> 
-								
-								</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Mis proyectos </a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="images//pic01.jpg" class="image"><img src="images/pic01.jpg" alt="" data-position="left 80%"  /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>ApiRest con Spring boot</h2>
-									<p>Este es un proyecto hecho Api rest con java, utilizando framework de spring boot con la base de datos MYSQL, que se consumio en Angular, se trata de mostrar Categorias de libros y y nombres de los libros con su respectivo descripción.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/DarioLopezL/ApiRest-books" class="button">Ver proyecto</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<a href="images//pic00.jpeg" class="image"><img src="images/pic00.jpeg" alt="" data-position="left 80%"  /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>ApiRest con Spring boot Empleado</h2>
-									<p>Api rest Empleado con spring boot utilizando base de datos no sql  MongoDB.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/DarioLopezL/Api-rest-empleado" class="button">Ver proyecto</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-
-						<!-- proyectos con imagenes -->
-						<section>
-							<a href="images//pic02.jpg" class="image"><img src="images/pic02.jpg" alt="" data-position="left 80%"  /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Formulario de Datos con Java</h2>
-									<p>Este es  un formulario de datos, donde el usuario tiene que llenar cada requisitos, fue hecho con Servlets de java con HTML.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/DarioLopezL/Java-Servlets-FormularioenHTML" class="button">Ver proyecto</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<!-- proyectos con imagenes -->
-						<section>
-							<a href="images//pic03.jpeg" class="image"><img src="images/pic03.jpeg" alt="" data-position="left 80%"  /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Registros de tareas</h2>
-									<p>Este es un proyecto basado en registrar las tareas de una persona y guardarlo para tener un recordatorio. Fue hecho en el lenguaje de programación PHP y MYSQL.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/DarioLopezL/Registro-de-tareas-PHP-Project" class="button">Ver proyecto</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="images//pic04.jpeg" class="image"><img src="images/pic04.jpeg" alt="" data-position="left center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sistema de administracion de personas con Django</h2>
-									<p>Este es un proyecto de Sistema de administracion de personas, este proyecto puede agregar un usuario con su gmail y actualizar sus datos y eliminar y ver a detalles los nombres y usuarios de la persona, También agregarle un domicilio o una dirrección. en este proyecto se utilizo un framework Django y se conecto con la base de datos de postgresql.</p>
-									<ul class="actions">
-									<!---	<li><a href="#nombreproyecto.html" class="button"> </a></li>-->
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<a href="#" class="image"><img src="images/pic05.jpeg" alt="" data-position="left center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sistemas de administracion personal</h2>
-									<p>Este es un proyecto realizado con FLASK, que muestra el total de registro de personas y el usuario pueda agregar y eliminar los datos.</p>
-									<ul class="actions">
-										<!--<li><a href="#nombre-proyecto" class="button"> </a></li>-->
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						
-					</section>
-
-				<!-- Two -->
-				<!-- iconos de habilidades -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Habilidades</h2>
-							<p>Mis Habilidades de Backend y frontend:</p>
+        <button >
+          <a href="https://github.com/DarioLopezL" target="_blank" class="github-btn">
+            <button>Ver mis Proyectos en GitHub</button>
+          </a>
+        </button>
+      </div>
+    </section>
+    
+    <section id="habilidades">
+      <h1>Habilidades</h1>
+      <h2>Mis Habilidades de Backend y frontend:</h2>
 							<div class="features">
-								<section>
-									<span class="fab fa-4x fa-java"></span>
-										
-									<h3>JAVA</h3>
-									<!-- <p>He hecho algunos proyectos en Java, de basico a intermedio, actualmente estoy tomando cursos para profundizar más sobre este lenguaje de programación, mi meta es aprendar y dominarlo hasta usar  framework como spring u otros. Si desea los invito a que visiten mi cuenta de GitHub para ver mis proyectos en Java</p>-->
+                <section>
+									
+									<span class=" fab fa-4x fa-php"></span>
+									<h3>PHP</h3>
+									
 								</section>
 								<section>
 									<span class="fas fa-4x fa-laptop-code"></span>
 									<h3>C++</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
 								<section>
 									<span class="fab fa-4x fa-python"></span>
 									<h3>Python</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
+								</section>
+                <section>
+									<span class="fab fa-4x fa-java"></span>
+									<h3>JAVA</h3>
 								</section>
 								<section>
 									<span class="fab fa-4x fa-java"></span>
 									<h3>spring boot</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
-								<section>
 									
-									<span class=" fab fa-4x fa-php"></span>
-									<h3>PHP</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
 								</section>
+								
 								<section>
 									<span class="fab fa-4x fa-html5"></span>
 									<h3>HTML5</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
 								<section>
 									<span class="fab fa-4x fa-python"></span>
 									<h3>Django</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
+								</section>
+                <section>
+									<span class="fab fa-4x fa-python"></span>
+									<h3>FLASK</h3>
+									
 								</section>
 								<section>
 									<span class="fas fa-4x fa-code-branch"></span>
 									<h3>Git</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
-								<section>
-									<span class="fab fa-4x fa-python"></span>
-									<h3>FLASK</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
+								
 								<section>
 									<span class="fab fa-4x fa-github"></span>
 									<h3>GitHub</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
 								<section>
 									<span class="fas fa-4x fa-database"></span>
 									<h3>MYSQL</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
 								<section>
 									<span class="fab fa-4x fa-js"></span>
 									<h3>JavaScritp</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
 								<section>
 									<span class="fas fa-4x fa-database"></span>
 									<h3>postgresql</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
+									
 								</section>
 								<section>
 									<span class="fab fa-4x fa-angular"></span>
 									<h3>Angular</h3>
-									<!-- <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p> -->
-								</section>
-
-
-
-
-
-
-
-							</div>
-							<ul class="actions">
-								<li><a href="#intro" class="button">Ir al inicio</a></li>
-							</ul>
-						</div>
-					</section>
-
-					<!-- iconos de habilidades termina aqui -->
-
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contactos</h2>
-							<p> Sí quieres realizar cualquier consulta puedes contactar conmigo rellenando el formulario de contacto que aparece abajo, indicando con el máximo detalle que puedas los servicios que necesitas e intentaré responder lo antes posible..</p>
-							<div class="split style1">
-								<section>
-									<form  name="contact" action="/mi-mensaje-de-exito.html" method="POST" data-netlify="true">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="email" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a  class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-
-									<ul class="contact">
-										<li>
-											<h3>Pais</h3>
-											<span>Panamá<br />
-											ciudad de panamá<br />
-											PTY</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:dario.music10@gmail.com">dario.music10@gmail.com</a>
-										</li>
-										<li>
-											<h3>Celular</h3>
-											<span>507 62525178</span>
-										</li>
-										<li>
-											<h3>Mis redes Sociales</h3>
-											<ul class="icons">
-												<li><a href="https://twitter.com/login/" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.facebook.com/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/dar%C3%ADo-abdiel-177692216" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
+									
 								</section>
 							</div>
-						</div>
-					</section>
+    </section>
 
-			</div>
+    <section id="contacto">
+      <h2>Contactos</h2>
+      <p>
+        Sí quieres realizar cualquier consulta puedes contactar conmigo
+        rellenando el formulario de contacto que aparece abajo, indicando con el
+        máximo detalle que puedas los servicios que necesitas e intentaré
+        responder lo antes posible..
+      </p>
+      <form
+        name="contact"
+        action="/mi-mensaje-de-exito.html"
+        method="POST"
+        data-netlify="true"
+      >
+        <div class="fields">
+          <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field half">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5"></textarea>
+          </div>
+        </div>
+        <ul class="actions">
+          <button type="submit">Enviar</button>
+        </ul>
+      </form>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<script>
-							const anioActual = new Date().getFullYear();
-							document.write(`<li>&copy; *Darío Abdiel-${anioActual}* | Todos los derechos reservados.</li>`);
-						  </script>
-					</ul>
-				</div>
-			</footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()" title="Ir arriba">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+      <script>
+        const anioActual = new Date().getFullYear();
+        document.write(
+          `&copy; *Darío Abdiel-${anioActual}* | Todos los derechos reservados.`
+        );
+      </script>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="social-icons mt-4">
+        <a href="#" class="text-white mx-2"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white mx-2"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/DarioLopezL" class="text-white mx-2"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()" title="Ir arriba">
+  <i class="fas fa-arrow-up"></i>
+</button>
 
-	</body>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      
+      window.onscroll = function() {
+        scrollFunction();
+      };
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      }
+      
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      function toggleMenu() {
+  var nav = document.querySelector('nav');
+  nav.classList.toggle('show');
+}
+      </script>
+      
+      
+  </body>
 </html>
