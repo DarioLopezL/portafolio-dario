@@ -7,6 +7,6 @@ function showSuccessMessage() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); 
     showSuccessMessage();
-    document.getElementById('contact-form').reset();
+    document.getElementById('contact').reset();
   });
   
