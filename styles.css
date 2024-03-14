@@ -320,3 +320,16 @@ footer {
 .github-btn button:hover {
   background-color: #218838;
 }
+
+.success-message {
+  display: none;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 400px; 
+  margin-left: auto;
+  margin-right: auto;
+}

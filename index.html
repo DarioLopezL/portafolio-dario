@@ -209,7 +209,7 @@
 							</div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="form-container">
       <h2>Contactos</h2>
       <p>
         Sí quieres realizar cualquier consulta puedes contactar conmigo
@@ -219,10 +219,11 @@
       </p>
       <form
         name="contact"
-        action="/mi-mensaje-de-exito.html"
+        id="contact-form"
+        action="#"
         method="POST"
         data-netlify="true"
-      >
+        >
         <div class="fields">
           <div class="field half">
             <label for="name">Name</label>
@@ -241,6 +242,9 @@
           <button type="submit">Enviar</button>
         </ul>
       </form>
+      <div id="success-message" class="success-message"
+      >¡Envío exitoso! Gracias por enviar el formulario.<br> Tu mensaje ha sido recibido con éxito.
+    </div>
     </section>
 
     <button id="scrollToTopBtn" onclick="scrollToTop()" title="Ir arriba">
@@ -275,6 +279,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       var scrollToTopBtn = document.getElementById("scrollToTopBtn");
       
