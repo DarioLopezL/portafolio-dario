@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('contact').addEventListener('submit', function(event) {
     event.preventDefault();
     showSuccessMessage();
-    document.getElementById('contact-form').reset();
+    document.getElementById('contact').reset();
   });
 });
 
